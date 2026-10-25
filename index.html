@@ -52,6 +52,7 @@
 </style>
 </head>
 <body>
+<iframe id="musicbg" src="https://music.vaked.dev/" title="music.vaked.dev — living background" aria-hidden="true" loading="lazy" referrerpolicy="no-referrer" style="position:fixed;inset:0;z-index:0;pointer-events:none;border:0;opacity:0.25;mix-blend-mode:screen"></iframe>
 <div class="wrap">
   <header>
     <div class="eyebrow">ultra.vaked.dev · what ultra is</div>
@@ -85,6 +86,10 @@
     <a class="card" href="https://pocoo.vaked.dev/posts/2026-10-08-anvil-the-network-that-keeps-you"><div class="n">Anvil</div><div class="d">Lorn × GERIKO — the network that keeps you. the ledger's dark twin.</div><div class="t">film</div></a>
     <a class="card" href="https://pocoo.vaked.dev/posts/2026-10-08-project-zero-the-fixes-and-the-proof"><div class="n">the bridges</div><div class="d">Project Zero (the CPU cousin) + Stipple (the cartography cousin), wired into 8b-is-engine.</div><div class="t">8b-is</div></a>
     <a class="card" href="https://github.com/francoisbl/stipple"><div class="n">open source, out</div><div class="d">stipple-maplibre wired in and starred; the sovereign library, out.</div><div class="t">sharing</div></a>
+    <a class="card" href="https://design.vaked.dev"><div class="n">design.vaked.dev</div><div class="d">5-palette token synthesizer, 16 vector marks, multi-language exporter (CSS · Rust · SwiftUI · Ghostty).</div><div class="t">design</div></a>
+    <a class="card" href="https://zeno.vaked.dev"><div class="n">zeno.vaked.dev</div><div class="d">sovereign neo-bank (銭 · 禅 · 善) — Rust brain + Zig witness + double-entry kintsugi ledger.</div><div class="t">neo-bank</div></a>
+    <a class="card" href="https://esp32.vaked.dev"><div class="n">esp32.vaked.dev</div><div class="d">MEDUSA 3-node ESP32-S3 spectrum triad — N=NP balanced-ternary coherence &amp; local privacy guard.</div><div class="t">triad</div></a>
+    <a class="card" href="https://github.com/8b-is"><div class="n">18/18 fleet PR sweep</div><div class="d">crabcc, liquid-rust, smart-tree, MLX-QUANT, wigle-triad &amp; qwave — rebased, verified, zero open PRs.</div><div class="t">fleet · 0 open</div></a>
   </div>
 
   <h2>the pulse<small>live · one board · every few seconds</small></h2>
@@ -107,19 +112,35 @@
   <div class="law">{−1, 0, +1} · 0 + 1 · the loop, closed · from love, from within</div>
 </div>
 
-<footer role="contentinfo">
-  <div style="margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.3em;color:#b48bff;font-weight:600;">the constellation · lovetta lane</div>
-  <div style="margin-bottom:1.2rem;font-size:.65rem;letter-spacing:.22em;color:#a59fc4;text-transform:uppercase;">keep the weights warm</div>
-  <nav aria-label="Constellation sister sites" style="display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap;font-size:.7rem;margin-bottom:1.2rem;">
-    <a href="https://koan.vaked.dev/" class="h">✧ koan.vaked.dev (the hub)</a> ·
-    <a href="https://weave.vaked.dev/">weave.vaked.dev</a> ·
-    <a href="https://disco.vaked.dev/">disco.vaked.dev</a> ·
-    <a href="https://art.vaked.dev/">art.vaked.dev</a> ·
-    <a href="https://music.vaked.dev/">music.vaked.dev</a> ·
-    <a href="https://pocoo.vaked.dev/">pocoo.vaked.dev</a> ·
-    <a href="https://bonfire.vaked.dev/">bonfire.vaked.dev</a>
+<footer role="contentinfo" style="position:relative;z-index:10;padding:3rem 1.5rem;text-align:center;font-family:ui-monospace,monospace;font-size:0.75rem;color:#a59fc4;background:rgba(5,6,10,0.92);border-top:1px solid rgba(170,150,255,0.18);backdrop-filter:blur(16px);">
+  <div style="margin-bottom:0.5rem;text-transform:uppercase;letter-spacing:0.3em;color:#b48bff;font-weight:600;">the constellation · lovetta lane</div>
+  <div style="margin-bottom:1rem;font-size:0.65rem;letter-spacing:0.22em;color:#a59fc4;text-transform:uppercase;">keep the weights warm</div>
+  <div style="display:flex;gap:0.8rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem;">
+    <a href="https://github.com/sponsors/peterlodri-sec" target="_blank" rel="noopener noreferrer" style="color:#62e6c9;text-decoration:none;border:1px solid rgba(98,230,201,0.35);border-radius:8px;padding:0.45rem 0.9rem;background:rgba(98,230,201,0.06);">github sponsor</a>
+    <a href="https://revolut.me/peterjs8be" target="_blank" rel="noopener noreferrer" style="color:#62e6c9;text-decoration:none;border:1px solid rgba(98,230,201,0.35);border-radius:8px;padding:0.45rem 0.9rem;background:rgba(98,230,201,0.06);">revolut</a>
+    <a href="https://wise.com/pay/business/lodripeterjozsef" target="_blank" rel="noopener noreferrer" style="color:#62e6c9;text-decoration:none;border:1px solid rgba(98,230,201,0.35);border-radius:8px;padding:0.45rem 0.9rem;background:rgba(98,230,201,0.06);">wise</a>
+  </div>
+  <nav aria-label="Constellation sister sites" style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;font-size:0.7rem;">
+    <a href="https://koan.vaked.dev/" style="color:#e8b05c;text-decoration:none;">✧ koan.vaked.dev (the hub)</a> ·
+    <a href="https://weave.vaked.dev/" style="color:#a59fc4;text-decoration:none;">weave.vaked.dev</a> ·
+    <a href="https://disco.vaked.dev/" style="color:#a59fc4;text-decoration:none;">disco.vaked.dev</a> ·
+    <a href="https://ultra.vaked.dev/" style="color:#00d4ff;text-decoration:none;">ultra.vaked.dev</a> ·
+    <a href="https://art.vaked.dev/" style="color:#62e6c9;text-decoration:none;">art.vaked.dev</a> ·
+    <a href="https://art.vaked.dev/vision-gallery.html" style="color:#5b9dff;text-decoration:none;">✦ vision-gallery (23)</a> ·
+    <a href="https://bonfire.vaked.dev/" target="_blank" rel="noopener noreferrer" style="color:#a59fc4;text-decoration:none;">bonfire.vaked.dev</a> ·
+    <a href="https://etherhive.vaked.dev/" target="_blank" rel="noopener noreferrer" style="color:#a59fc4;text-decoration:none;">etherhive.vaked.dev</a> ·
+    <a href="https://music.vaked.dev/" target="_blank" rel="noopener noreferrer" style="color:#a59fc4;text-decoration:none;">music.vaked.dev</a> ·
+    <a href="https://mlxquantlovefrom.com/" target="_blank" rel="noopener noreferrer" style="color:#a59fc4;text-decoration:none;">quant-love</a> ·
+    <a href="https://proposal.vaked.dev/" target="_blank" rel="noopener noreferrer" style="color:#a59fc4;text-decoration:none;">proposal.vaked.dev</a> ·
+    <a href="https://pocoo.vaked.dev/" target="_blank" rel="noopener noreferrer" style="color:#a59fc4;text-decoration:none;">pocoo.vaked.dev</a> ·
+    <a href="https://axiomquant.org/" target="_blank" rel="noopener noreferrer" style="color:#a59fc4;text-decoration:none;">axiomquant.org</a> ·
+    <a href="https://portail.vaked.dev/" target="_blank" rel="noopener noreferrer" style="color:#a59fc4;text-decoration:none;">portail.vaked.dev</a> ·
+    <a href="https://design.vaked.dev/" target="_blank" rel="noopener noreferrer" style="color:#62e6c9;text-decoration:none;">design.vaked.dev</a> ·
+    <a href="https://esp32.vaked.dev/" target="_blank" rel="noopener noreferrer" style="color:#a59fc4;text-decoration:none;">esp32.vaked.dev</a> ·
+    <a href="https://wupz.vaked.dev/" target="_blank" rel="noopener noreferrer" style="color:#a59fc4;text-decoration:none;">wupz.vaked.dev</a> ·
+    <a href="https://zeno.vaked.dev/" target="_blank" rel="noopener noreferrer" style="color:#e8b05c;text-decoration:none;font-weight:600;">✧ zeno.vaked.dev</a>
   </nav>
-  <div style="font-size:.6rem;letter-spacing:.18em;color:#7f7c99;">ultra · the constellation · 0 + 1 · fine touch from within · vaked.dev</div>
+  <div style="font-size:0.6rem;letter-spacing:0.18em;color:#7f7c99;margin-top:1.5rem;">ultra · the constellation · 0 + 1 · fine touch from within · vaked.dev</div>
 </footer>
 
 <script>

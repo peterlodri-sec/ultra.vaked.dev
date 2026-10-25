@@ -14,9 +14,10 @@ A showcase, in the constellation's own voice, of what **ultra** means here: not
 half-wired and the tree ending pushed and readme'd.
 
 The page is also the receipt: it lists the surfaces shipped in one sitting
-(`koan`, `weave`, `disco`, the studies, the engine bridges), the live ternary
-pulse, and the one rule — *a plausible branch may be ranked; only a verified
-branch may be bound.*
+(`koan`, `weave`, `disco`, `design`, `zeno`, `esp32`, the studies, the engine
+bridges, and the 18/18 `8b-is` fleet PR sweep), the live ternary pulse, and the
+one rule — *a plausible branch may be ranked; only a verified branch may be
+bound.*
 
 ## ✦ Deploy
 
@@ -33,7 +34,8 @@ DNS: proxied `CNAME ultra.vaked.dev → ultra-vaked-dev.pages.dev` in the
 
 - **robots.txt** — anti-AI scraper rules.
 - **_headers** — `no-cache` + `X-Robots-Tag: noai, noimageai` + a strict CSP.
-- **Lovetta Lane footer** — sister-site backreferences.
+- **Lovetta Lane footer** — sponsor links + sister-site backreferences to every live door.
+- **Living background audio** — `music.vaked.dev` embedded as a fixed iframe.
 - **live ternary signature** — `{−1, 0, +1}` recomputed every 3s (the pulse).
 
 *the loop, closed · 0 + 1 · fine touch from within · vaked.dev*
